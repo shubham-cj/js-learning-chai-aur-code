@@ -65,4 +65,57 @@ Note
 </div>
 
 ___
+##JavaScript Data Types
+####JavaScript has 8 Datatypes
+1. `String`
+2. `Number`
+3. `Bigint`
+4. `Boolean`
+5. `Undefined`
+6. `Null`
+7. `Symbol`
+8. `Object`
+
+####The Object Datatype
+######The object data type can contain:
+
+1. An `object`
+2. An `array`
+3. A `date`
+
+``` javascript
+// Numbers:
+let length = 16;
+let weight = 7.5;
+
+// Strings:
+let color = "Yellow";
+let lastName = "Johnson";
+
+// Booleans
+let x = true;
+let y = false;
+
+// Object:
+const person = {firstName:"John", lastName:"Doe"};
+
+// Array object:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Date object:
+const date = new Date("2022-03-25");
+```
+>JavaScript `BigInt` variables are used to store big integer values that are too big to be represented by a normal JavaScript `Number`.
+
+```javascript
+let a
+console.log(a) // undefined
+
+//here if we don't specify value to a variable it will be `undefined`
+
+let a = null
+console.log(a) // null
+//here if we don't want any value to variable and don't want it as undefined we can just assign `null` to the value.
+```
+___
 
