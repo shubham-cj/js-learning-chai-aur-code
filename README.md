@@ -288,7 +288,7 @@ There are different types of JavaScript operators:
 |Logical OR assignment	|`x ll= f()`	|`x ll (x = f())`|
 |Nullish coalescing assignment	|`x ??= f()`	|`x ?? (x = f())`|
 
->Here in the table 'l'(small l) = '|' (pipe character)
+>Here in the table '`l`'(small l) = '|' (pipe character)
 
 **Comparison Operators**
 |Operator	|Description	|Examples returning true |
@@ -343,3 +343,25 @@ For example,
 const status = age >= 18 ? "adult" : "minor";
 ```
 This statement assigns the value "**adult**" to the variable `status` if `age` is eighteen or more. Otherwise, it assigns the value "**minor**" to `status`.
+____
+##Postfix and Prefix Operators
+####Postfix and Prefix Increment Operator
+``` javascript
+let x = 3;
+const y = x++;
+// x is 4 and y is 3
+
+let x = 3;
+const y = ++x;
+// x is 4 and y is 4
+```
+####Postfix and Prefix Decrement Operator
+``` javascript
+let x = 3;
+const y = x--;
+// x is 2; y is 3
+
+let x = 3;
+const y = --x;
+// x is 2; y is 2
+```
