@@ -1,3 +1,4 @@
+![Js Logo](https://res.cloudinary.com/diwtxg4ou/image/upload/v1701707489/samples/hxi56trywjosexcl6rah.png "JS Logo")
 #JavaScript Learning - Chai Aur Code 
 This is a JavaScript programming language Notes
 ___
@@ -255,3 +256,90 @@ console.log(typeof value2ToBoolean)   //boolean
 // console.log(value4ToNull)   //TypeError: null is not a function
 ```
 >You can not do conversions to undefined & null, because `undefined()` and `null()` respectively are not a function.
+___
+##Javascript Operators
+######Operators are used to assign values, compare values, perform arithmetic operations, and more.
+
+There are different types of JavaScript operators:
+
+    Assignment Operators
+    Comparison Operators
+    Arithmetic Operators
+    Bitwise operators
+    Logical Operators
+    Conditional Operators
+**Assignment Operators**
+|Name |Shorthand operator |Meaning |
+| ---|---|---|
+|Assignment	|`x = f()`	|`x = f()`|
+|Addition assignment	|`x += f()`	|`x = x + f()`|
+|Subtraction assignment	|`x -= f()`	|`x = x - f()`|
+|Multiplication assignment	|`x *= f()`	|`x = x * f()`|
+|Division assignment	|`x /= f()`	|`x = x / f()`|
+|Remainder assignment	|`x %= f()	`|`x = x % f()`|
+|Exponentiation assignment	|`x **= f()	`|`x = x ** f()`|
+|Left shift assignment	|`x <<= f()`|`x = x << f()`|
+|Right shift assignment	|`x >>= f()`	|`x = x >> f()`|
+|Unsigned right shift assignment	|`x >>>= f()`	|`x = x >>> f()`|
+|Bitwise AND assignment	|`x &= f()`	|`x = x & f()`|
+|Bitwise XOR assignment	|`x ^= f()`	|`x = x ^ f()`|
+|Bitwise OR assignment	|`x l= f()`	|`x = x l f()`|
+|Logical AND assignment	|`x &&= f()`	|`x && (x = f())`|
+|Logical OR assignment	|`x ll= f()`	|`x ll (x = f())`|
+|Nullish coalescing assignment	|`x ??= f()`	|`x ?? (x = f())`|
+
+>Here in the table 'l'(small l) = '|' (pipe character)
+
+**Comparison Operators**
+|Operator	|Description	|Examples returning true |
+|--- |--- |--- |
+|Equal `(==)`	|Returns true if the operands are equal.	|3 == var1<br>"3" == var1<br>3 == '3' |
+|Not equal `(!=)`	|Returns true if the operands are not equal.	|`var1 != 4`<br>`var2 != "3"` |
+|Strict equal `(===)`	|Returns true if the operands are equal and of the same type. See also Object. is and sameness in JS.	|3 === var1|
+|Strict not equal `(!==)`	|Returns true if the operands are of the same type but not equal, or are of different type.	|`var1 !== "3"` <br> `3 !== '3'`|
+|Greater than `(>)`	|Returns true if the left operand is greater than the right operand.	|var2 > var1<br>"12" > 2 |
+|Greater than or equal `(>=)`	|Returns true if the left operand is greater than or equal to the right operand.	|`var2 >= var1` <br>`var1 >= 3` |
+|Less than `(<)`	|Returns true if the left operand is less than the right operand.	|var1 < var2 <br>"2" < 12 |
+|Less than or equal `(<=)`	|Returns true if the left operand is less than or equal to the right operand.	|`var1 <= var2` <br>`var2 <= 5 `|
+
+**Arithmetic Operators**
+|Operator	|Description	|Example|
+| ---| ---| ---|
+|Remainder `(%)`	|Binary operator. Returns the integer remainder of dividing the two operands.	|12 % 5 returns 2.|
+|Increment `(++)`	|Unary operator. Adds one to its operand. If used as a prefix operator `(++x)`, returns the value of its operand after adding one; if used as a postfix operator `(x++)`, returns the value of its operand before adding one.	|If `x` is 3, then `++x` sets `x` to 4 and returns 4, whereas `x++` returns 3 and, only then, sets `x` to 4.|
+|Decrement `(--)`	|Unary operator. Subtracts one from its operand. The return value is analogous to that for the increment operator.	|If `x` is 3, then -`-x` sets `x` to 2 and returns 2, whereas `x--` returns 3 and, only then, sets `x` to 2.|
+|Unary negation `(-)`	|Unary operator. Returns the negation of its operand.	|If `x` is 3, then `-x` returns -3.
+|Unary plus `(+)`	|Unary operator. Attempts to convert the operand to a number, if it is not already.	|`+"3"` returns `3`. <br> `+true` returns `1`.|
+|Exponentiation operator `(**)`	|Calculates the `base` to the `exponent` power, that is, `base^exponent`	|`2 ** 3 `returns `8`. <br> `10 ** -1 `returns `0.1`.|
+
+**Bitwise operators**
+|Operator	|Usage	|Description |
+|--- |--- |--- |
+|Bitwise AND	|`a & b`	|Returns a one in each bit position for which the corresponding bits of both operands are ones.|
+Bitwise OR	|`a l b`	|Returns a zero in each bit position for which the corresponding bits of both operands are zeros.|
+|Bitwise XOR	|`a ^ b`	|Returns a zero in each bit position for which the corresponding bits are the same. [Returns a one in each bit position for which the corresponding bits are different.]|
+|Bitwise NOT	|`~ a`	|Inverts the bits of its operand.|
+|Left shift	|`a<<b`|Shifts `a` in binary representation `b` bits to the left, shifting in zeros from the right.|
+|Sign-propagating right shift	|`a>>b`	|Shifts `a` in binary representation `b` bits to the right, discarding bits shifted off.|
+|Zero-fill right shift	|`a>>>b`	|Shifts `a` in binary representation `b` bits to the right, discarding bits shifted off, and shifting in zeros from the left.|
+
+**Logical Operators**
+|Operator	|Usage	|Description |
+|--- |--- |--- |
+|Logical AND `(&&)`	|`expr1 && expr2`	|Returns expr1 if it can be converted to `false`; otherwise, returns `expr2`. Thus, when used with Boolean values, `&&` returns `true` if both operands are `true`; otherwise, returns `false`. |
+Logical OR `(ll)`	|`expr1 ll expr2`	|Returns `expr1` if it can be converted to `true`; otherwise, returns `expr2`. Thus, when used with Boolean values, `ll` returns `true` if either operand is `true`; if both are `false`, returns `false`. |
+Logical NOT `(!)`	|`!expr`	|Returns `false` if its single operand that can be converted to `true`; otherwise, returns `true`. |
+
+**Conditional Operators**
+The conditional operator is the only JavaScript operator that takes three operands. The operator can have one of two values based on a condition.
+The syntax is:
+``` javascript
+condition ? val1 : val2
+```
+If condition is `true`, the operator has the value of `val1`. Otherwise it has the value of `val2`. You can use the conditional operator anywhere you would use a standard operator.
+
+For example,
+``` javascript
+const status = age >= 18 ? "adult" : "minor";
+```
+This statement assigns the value "**adult**" to the variable `status` if `age` is eighteen or more. Otherwise, it assigns the value "**minor**" to `status`.

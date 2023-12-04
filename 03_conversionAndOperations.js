@@ -1,3 +1,4 @@
+//****************Javascript type Conversion***************
 //Conversion to "string"
 
 let value = 12345  //useing number type
@@ -129,3 +130,8 @@ console.log(typeof value2ToBoolean)   //boolean
 // console.log(value4ToNull)   //TypeError: null is not a function
 
 // You can not do conversions to null, because null is not a function
+
+//****************Javascript Operations***************
+let value4 = 3
+let negValue = -value4 
+console.log(negValue);
