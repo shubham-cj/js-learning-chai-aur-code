@@ -42,3 +42,15 @@ const myFunction = function(){
     console.log("Hello World")
 }
 console.log(typeof myFunction)    // function
+
+
+//JavaScript uses two types of memory to store data: the stack and the heap.
+
+//The stack
+//is a LIFO (last-in-first-out) data structure that stores primitive data types (numbers, strings, booleans, null, and undefined), local variables, and function arguments. The stack is managed automatically by the JavaScript engine, and you don't need to worry about allocating or freeing memory on the stack.
+
+//The heap
+//is a free-form data structure that stores complex data types, such as objects, arrays, and functions. The heap is managed by the garbage collector, which automatically reclaims memory that is no longer being used.
+
+//stack(for primitive types) >> it gives the copy of data
+//heap(for non-primitive types) >> it gives the reference of data
