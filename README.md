@@ -365,3 +365,25 @@ let x = 3;
 const y = --x;
 // x is 2; y is 2
 ```
+##Some Question-Answer about data types
+    Que: Is javascript dinamically typed or statically?
+    Ans: Dinamically typed, because while assigning variables we don't need to mention
+        data type.
+
+    Que: what is the difference between Primitive and Non-primitive?
+    Ans: Non-primitive data types are called reference types because they refer to objects.
+        The main difference between primitive and non-primitive data types are: Primitive
+        types are predefined (already defined) in JavaScript. Non-primitive types are
+        created by the programmer and is not defined by Java (except for String ).
+
+##Memory Storage in JavaScript
+######JavaScript uses two types of memory to store data: the stack and the heap.
+
+**The stack**
+is a LIFO (last-in-first-out) data structure that stores primitive data types (numbers, strings, booleans, null, and undefined), local variables, and function arguments. The stack is managed automatically by the JavaScript engine, and you don't need to worry about allocating or freeing memory on the stack.
+
+**The heap**
+is a free-form data structure that stores complex data types, such as objects, arrays, and functions. The heap is managed by the garbage collector, which automatically reclaims memory that is no longer being used.
+
+    stack(for primitive types) >> it gives the copy of data
+    heap(for non-primitive types) >> it gives the reference of data
