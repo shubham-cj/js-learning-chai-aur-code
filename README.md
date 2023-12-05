@@ -387,3 +387,63 @@ is a free-form data structure that stores complex data types, such as objects, a
 
     stack(for primitive types) >> it gives the copy of data
     heap(for non-primitive types) >> it gives the reference of data
+
+##Strings
+#####String concatenation
+```javascript
+const name = "Shubham"
+const repoCount = 10
+
+console.log(name + repoCount + " repositories")  // Shubham10 repositories
+//This syntax of string concatenation is old don't use this syntax.
+
+// Instead you should use new syntax called "string interpolation" (`string content`).
+console.log(`${name} ${repoCount} repositories`); // Shubham 10 repositories
+```
+#####Assignings string to a variable
+``` javascript
+const instaId = new String("shubham_cj")
+```
+This syntax is new style to assign string in variables.
+This will gives so many properties with it.
+Properties are as follows:
+__String Methods__:
+* `length()`
+* `charAt()`
+* `charCodeAt()`
+* `codePointAt()`
+* `endsWith()`
+* `startsWith()`
+* `iswellFormed()`
+* `lastIndexOf()`
+* `locaelCompare()`
+* `match()`
+* `matchAll()`
+* `normalize()`
+* `padEnd()`
+* `padStart()`
+* `repeat()`
+* `replace()`
+* `replaceAll()`
+* `slice()`
+* `split()`
+* `search()`
+* `substring()`
+* `toLocaleLowerCase()`
+* `toLocaleUpperCase()`
+* `toLowerCase()`
+* `toUpperCase()`
+* `toString()`
+* `toWellFormed()`
+* `trim()` 
+* `trimStart()`
+* `trimEnd()`
+* `ValueOf()`
+
+__Array Methods__:
+* `length()`
+* `at()`
+* `concat()`
+* `includes()`
+* `indexOf()`
+

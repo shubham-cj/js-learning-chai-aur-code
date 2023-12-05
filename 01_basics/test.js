@@ -1,3 +1,2 @@
-let x = 3;
-y = ++x;
-console.log(y);
+a = [1, 2, 3, 4, 5, 6]
+console.log(a.length);
