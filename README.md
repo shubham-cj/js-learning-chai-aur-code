@@ -405,9 +405,10 @@ console.log(`${name} ${repoCount} repositories`); // Shubham 10 repositories
 const instaId = new String("shubham_cj")
 ```
 This syntax is new style to assign string in variables.
-This will gives so many properties with it.
+This will gives prototype of built in string methods with it.
 Properties are as follows:
-__String Methods__:
+
+_String Methods_:
 * `length()`
 * `charAt()`
 * `charCodeAt()`
@@ -440,10 +441,73 @@ __String Methods__:
 * `trimEnd()`
 * `ValueOf()`
 
-__Array Methods__:
+_Array Methods_:
 * `length()`
 * `at()`
 * `concat()`
 * `includes()`
 * `indexOf()`
+
+##Numbers
+By assigning number to a variable with new object you will get prototype functions of maths methods with it.
+``` javascript
+const number = new Number(10);
+```
+These are as follows:
+* `constructor()`
+* `toExponential()`
+* `toFixed()`
+* `toLocaleString()`
+* `toPrecision()`
+* `toString()`
+* `valueOf()`
+
+##Math Methods
+By the `Math.__` function you will get some useful standerd values 
+
+`Math.E`(_2.718281828459045_)
+`Math.LN2`(_0.6931471805599453_)
+`Math.LN10`(_2.302585092994046_)
+`Math.LOG2`(_1.4426950408889634_)
+`Math.LOG10E`(_0.4342944819032518_)
+`Math.PI`(_3.141592653589793_)
+`Math.SQRT1_2`(_0.7071067811865476_)
+`Math.SQRT2`(_1.4142135623730951_)
+
+And these are protocol functions to do mathods in maths:
+* `Math.abs()`
+* `Math.acos()`
+* `Math.acosh()`
+* `Math.asin()`
+* `Math.asinh()`
+* `Math.atan()`
+* `Math.atan2()`
+* `Math.atanh()`
+* `Math.cbrt()`
+* `Math.ceil()`
+* `Math.clz32()`
+* `Math.cos()`
+* `Math.cosh()`
+* `Math.exp()`
+* `Math.expm1()`
+* `Math.floor()`
+* `Math.fround()`
+* `Math.hypot()`
+* `Math.imul()`
+* `Math.log()`
+* `Math.log1p()`
+* `Math.log2()`
+* `Math.log10()`
+* `Math.max()`
+* `Math.min()`
+* `Math.pow()`
+* `Math.random()`
+* `Math.round()`
+* `Math.sign()`
+* `Math.sin()`
+* `Math.sinh()`
+* `Math.sqrt()`
+* `Math.tan()`
+* `Math.tanh()`
+* `Math.trunc()`
 
