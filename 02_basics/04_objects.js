@@ -57,18 +57,45 @@ const user = [
     }
 ]
 
-console.log(user[1]);   // { name: 'Mary' }
-console.log(user[1].name);   // Mary
+// console.log(user[1]);   // { name: 'Mary' }
+// console.log(user[1].name);   // Mary
 
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser));    // [ 'id', 'name', 'isLoggedIn' ]
-console.log(Object.values(tinderUser));    // [ '123abc', 'Shubham', true ]
-console.log(Object.entries(tinderUser));    // [ [ 'id', '123abc' ], [ 'name', 'Shubham' ], [ 'isLoggedIn', true ] ]
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser));    // [ 'id', 'name', 'isLoggedIn' ]
+// console.log(Object.values(tinderUser));    // [ '123abc', 'Shubham', true ]
+// console.log(Object.entries(tinderUser));    // [ [ 'id', '123abc' ], [ 'name', 'Shubham' ], [ 'isLoggedIn', true ] ]
 
-console.log(tinderUser.hasOwnProperty("isLoggedIn"));    // true
-console.log(tinderUser.hasOwnProperty("isLogged"));    // false
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"));    // true
+// console.log(tinderUser.hasOwnProperty("isLogged"));    // false
 
-console.log(Object.getOwnPropertyNames(tinderUser));    // [ 'id', 'name', 'isLoggedIn' ]
+// console.log(Object.getOwnPropertyNames(tinderUser));    // [ 'id', 'name', 'isLoggedIn' ]
 
-console.log(Object.getOwnPropertySymbols(tinderUser));    // [ Symbol(key1) ]
+// console.log(Object.getOwnPropertySymbols(tinderUser));    // [ Symbol(key1) ]
+
+
+
+// Object destructuring:
+const course = {
+    courseName: "Javascript",
+    courseFees: "999",
+    courseInstructor: "Hitesh"
+}
+
+// console.log(course.courseInstructor),  insted of using this syntax you can use symplified syntax for this.
+const {courseInstructor} = course
+console.log(courseInstructor);   // Hitesh
+
+// further you can make above simpler
+const {courseInstructor: instructor} = course
+console.log(instructor);   // Hitesh
+
+
+
+/*
+JSON: 
+    JSON stands for JavaScript Object Notation
+    JSON is a lightweight format for storing and transporting data
+    JSON is often used when data is sent from a server to a web page
+    JSON is "self-describing" and easy to understand
+*/
