@@ -2,6 +2,7 @@ const accountId = 940346
 let accountEmail = "shubham@gmail.com"
 var accountPassword = "1234"
 accountCity = "Satara"
+console.log(typeof accountCity)     // string
 let accountState
 
 console.log(accountState) //Undefined

@@ -12,11 +12,11 @@ function sayMyName() {
 
 
 
-function addTwoNumbers(num1, num2) {      // num1 and num2 are 'parameters'
+function addTwoNumbers(num1, num2) {      // num1 and num2 are 'arguments'
     // console.log(num1 + num2);
 }
 addTwoNumbers()   // NaN
-addTwoNumbers(2, 3)   // 5                // 2 and 3 are 'aruments'
+addTwoNumbers(2, 3)   // 5                // 2 and 3 are 'parameters'
 addTwoNumbers(2, "3")   // 23
 addTwoNumbers(2, null)   // 2
 

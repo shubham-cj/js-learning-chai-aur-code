@@ -21,7 +21,7 @@ valueToString = String(value)
 console.log(valueToString)   //undefined
 console.log(typeof valueToString)   //string
 
-value = {a: true}  //useing undefined type
+value = {a: true}  //useing object type
 valueToString = String(value) 
 console.log(valueToString)   //[object Object]
 console.log(typeof valueToString)   //string
@@ -117,7 +117,7 @@ console.log(typeof value2ToBoolean)   //boolean
 
 //Conversion to undefined
 
-// let value3 = "undefined"  //using undefined string type
+let value3 = "undefined"  //using undefined string type
 // let value3ToUndefined = undefined(value3)
 // console.log(value3ToUndefined)   //TypeError: undefined is not a function
 
@@ -125,13 +125,13 @@ console.log(typeof value2ToBoolean)   //boolean
 
 // Conversion to null
 
-// let value4 = "null"  //using null string type
+let value4 = "null"  //using null string type
 // let value4ToNull = null(value4)
 // console.log(value4ToNull)   //TypeError: null is not a function
 
 // You can not do conversions to null, because null is not a function
 
 //****************Javascript Operations***************
-let value4 = 3
-let negValue = -value4 
-console.log(negValue);
+let value5 = 3
+let negValue = -value5
+console.log(negValue);    // -3
