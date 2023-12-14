@@ -11,7 +11,8 @@ const instaId = new String("shubham_cj")
 // This syntax is new style to assign string in variables.
 // This will gives so many properties with it.
 // Let's use the properties one by one
-console.log(instaId.toString());
+console.log(instaId);    // [String: 'shubham_cj'] 
+console.log(instaId.toString());    // shubham_cj
 
 
 // lengthOf()

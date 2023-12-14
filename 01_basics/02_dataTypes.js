@@ -3,7 +3,7 @@
 // alert(3 + 3)   // we are using node.js, not browser
 // alert function will work in browser.
 
-// Data Types 
+//> Data Types 
 
 // number => 2 to the power of 53
 console.log(2 ** 53);   // 9007199254740992
