@@ -1,8 +1,24 @@
-// Is javascript dinamically typed or statically?
-//Ans: Dinamically typed, because while assigning variables we don't need to mention data type.
+/*
+> Is javascript dinamically typed or statically?
+    JavaScript is a dynamically typed language, which means that data types of variables are determined by the value they hold at runtime and can change throughout the program as we assign different values to them.
 
-// what is the difference between Primitive and Non-primitive?
-// Ans: Non-primitive data types are called reference types because they refer to objects. The main difference between primitive and non-primitive data types are: Primitive types are predefined (already defined) in JavaScript. Non-primitive types are created by the programmer and is not defined by Java (except for String ).
+> what is the difference between Primitive and Non-primitive?
+    Non-primitive data types are called reference types because they refer to objects. The main difference between primitive and non-primitive data types are: Primitive types are predefined (already defined) in JavaScript. Non-primitive types are created by the programmer and is not defined by JavaScript (except for String ).
+
+┌────────────────┬──────────────────────┬──────────────────────────┐
+│ Characteristic │ Primitive Data Types │ Non-Primitive Data Types |
+├────────────────┼──────────────────────┼──────────────────────────┤
+│ Mutability     │ Immutable            │ Mutable                  |
+├────────────────┼──────────────────────┼──────────────────────────┤
+│ Passing        │ Passed by value      │ Passed by reference      |
+│ mechanism      │                      │                          |
+├────────────────┼──────────────────────┼──────────────────────────┤
+│ Examples       │ String, Number,      | Object, Array, Function  |
+|                │ Boolean, Null,       |                          |
+|                | Undefined, BigInt,   |                          |
+|                | Symbol               |                          |
+└────────────────┴──────────────────────┴──────────────────────────┘
+*/
 
 // There are mainly two data types:
 
