@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #6b6b6b;
+    border-bottom: 2px solid #000;
+    margin: 0 0 20px;
+    text-align: center;
+    padding: 20px;
+}
+nav a {
+    background-color: #bebebe;
+    padding: 6px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1.4px solid #000;
+}
+nav a:first-child{
+    margin-right: 20px;
+    padding: 6px 50px;
+}
+
+body div {
+    padding: 30px;
+    text-align: center;
+}
+
+span {
+    display: block;
+}
+
+body div .button {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    display: inline-block;
+    margin: 40px auto;
+    cursor: pointer;
+}
+
+#gray {
+    background-color: gray;
+}
+#white {
+    background: white;
+}
+#blue {
+    background: blue;
+}
+#yellow {
+    background: yellow;
+}
+
+h2 {
+    font-size: 20px;
+}
