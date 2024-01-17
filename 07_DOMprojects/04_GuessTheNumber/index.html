@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess the Number</title>
+</head>
+<body>
+    <nav>
+        <a href="/" aria-current="page">Home</a>
+        <a href="https://www.youtube.com/@shubhamjagtap1504" target="_blank">Youtube Channel</a>
+    </nav>
+    <main>
+        <h1>Number Guessing Game</h1>
+        <p>
+            Try and guess a random number between 1 to 100. <br> You have 10 attempts to guess the right number.
+        </p>
+        <h2>Guess Your Number</h2>
+        <input type="text" placeholder="type here">
+        <p id="displayResult"></p>
+        <button id="button" type="submit">Check</button>
+        <br>
+        <br>
+        <p>
+            Previous Guess: <span id="previousGuess"></span>
+        </p>
+        <p>
+            Guess Remaining: <span id="remaining">10</span>
+        </p>
+        <p id="refreshMsg">Refresh the page to play again!</p>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
