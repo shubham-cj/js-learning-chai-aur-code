@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai Aur JavaScript</h1>
+    <h2></h2>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+    document.querySelector('#start').addEventListener('click', function () {
+        const sayDate = function(str) {
+            let text = (str, (new Date()).toLocaleTimeString()); 
+            document.querySelector('h2').innerHTML = text
+        }
+        const time = setInterval(sayDate, 1000, "Time: ");
+
+        document.querySelector('#stop').addEventListener('click', function () {
+            clearInterval(time); 
+            document.querySelector('h2').innerHTML = ""
+        })
+    });
+    
+    
+</script>
+</html>
