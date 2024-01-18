@@ -38,3 +38,7 @@ main {
 #start {
     margin-right: 30px;
 }
+
+button {
+    cursor: pointer;
+}
