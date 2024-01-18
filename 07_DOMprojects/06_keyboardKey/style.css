@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&family=Shadows+Into+Light&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #6b6b6b;
+    border-bottom: 2px solid #000;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+}
+nav a {
+    background-color: #bebebe;
+    padding: 6px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1.4px solid #000;
+    color: #000;
+}
+nav a:first-child{
+    margin-right: 10%;
+    padding: 6px 50px;
+}
+
+table,th,td {
+    border: 1px solid #e7e7e7;
+    padding: 10px;
+}
+.project {
+    font-family: League Spartan;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 90vh;
+}
+
+.color {
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+}
