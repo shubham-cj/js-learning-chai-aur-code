@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Requesting</title>
+</head>
+<body>
+    <p id="text"></p>
+</body>
+<script>
+    const p = document.getElementById("text");
+    const requestURL = "https://api.github.com/users/shubham-cj"
+
+    const xhr = new XMLHttpRequest();   // XMLHttpRequest object created.
+    xhr.open('GET', requestURL, true)   // this will specify the type of API request.
+    
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            const data = JSON.parse(this.responseText);
+            p.innerHTML = data.name;
+            console.log(data);
+        }
+    }
+    xhr.send();   //  Actual sends the request to the server.
+</script>
+</html>
