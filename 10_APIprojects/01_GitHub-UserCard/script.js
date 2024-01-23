@@ -61,12 +61,14 @@ function creatAndAppendCard(data) {
     let profileURL = document.createElement("a");
     profileURL.innerHTML = "click to see profile";
     profileURL.href = `${data.html_url}`;
+    profileURL.target = "_blank";
     profileURL.classList.add("user-card-profile");
     div.appendChild(profileURL);
 
     gitHubCard.appendChild(div);
 
     let button = document.createElement("button");
+    button.classList.add("user-card-button");
     button.innerHTML = "Create More!";
     button.style.marginTop = "20px";
     button.id = "goHome"
@@ -76,6 +78,8 @@ function creatAndAppendCard(data) {
     goHome.addEventListener("click", () => {
         gitHubCard.style.display = "none";
         inputPage.style.display = "block";
+        document.querySelector(".user-card").remove();
+        document.querySelector(".user-card-button").remove();
     })
     msgToUser.textContent = "";
 }
@@ -104,4 +108,5 @@ button.addEventListener('click', () => {
         xhr.send();
     }
     userInput.value = "";
+    gitHubCard.style.display = "block";
 })
