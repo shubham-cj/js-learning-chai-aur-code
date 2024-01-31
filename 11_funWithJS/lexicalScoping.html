@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical Scoping</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // function init() {
+    //     let name = "Mozilla"; // name is a local variable created by init
+    //     function displayName() {
+    //         // displayName() is the inner function, that forms the closure
+    //         console.log(name); // use variable declared in the parent function
+    //     }
+    //     displayName();
+    // }
+    // init();
+
+    function outer() {
+        let username = "shubham"
+        function inner() {
+            console.log("inner function:",username);
+            function inner_inner() {
+                console.log("inner_inner function:",username);
+            }
+            inner_inner();
+        }
+        inner();
+        function inner2() {
+            console.log("inner2 function:",username);
+        }
+        inner2();
+    }
+    outer();
+    console.log("TOO OUTER", username);
+</script>
+</html>

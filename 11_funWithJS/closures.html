@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures</title>
+</head>
+<body>
+    <button id="orange">Orange</button>
+    <button id="red">Red</button>
+</body>
+<script>
+    // function makeFunc() {
+    //     const name = "Mozilla";
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+    //     return displayName;
+    // }
+
+    // const myFunc = makeFunc();
+    // myFunc();
+</script>
+<script>
+    const orangeBtn = document.getElementById("orange")
+    const redBtn = document.getElementById("red")
+
+    // orangeBtn.onclick = () => {
+    //     document.body.style.backgroundColor = "orange";
+    // }
+    // greenBtn.onclick = () => {
+    //     document.body.style.backgroundColor = "green";
+    // }
+
+    function clickHandler(color) {
+        // document.body.style.backgroundColor = `${color}`
+        
+        return () => {
+            document.body.style.backgroundColor = `${color}`
+        }
+    }
+    orangeBtn.onclick = clickHandler('orange')
+    redBtn.onclick = clickHandler('red')
+
+    // This is the use of closure
+</script>
+</html>
